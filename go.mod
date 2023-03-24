@@ -1,4 +1,4 @@
-module github.com/bastengao/chinese-holidays-go
+module github.com/eyotang/chinese-holidays-go
 
 go 1.14
 

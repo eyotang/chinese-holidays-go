@@ -9,12 +9,10 @@ const local = "Asia/Shanghai"
 const typeHoliday = "holiday"
 const typeWorkingday = "workingday"
 
-var location, lerr = time.LoadLocation(local)
+var location *time.Location
 
 func init() {
-	if lerr != nil {
-		fmt.Println(lerr)
-	}
+	location = time.FixedZone("CST", 8*3600)
 }
 
 type event struct {
